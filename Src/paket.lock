@@ -1,0 +1,20 @@
+RESTRICTION: == net6.0
+NUGET
+  remote: paket-files/github.com/techiedesu/falanx/Built
+    Falanx.Proto.Codec.Binary (0.6.1)
+      Froto.Serialization (>= 0.7.2)
+      FSharp.Core (6.0.3)
+  remote: https://api.nuget.org/v3/index.json
+    Falanx.Sdk (0.5.2)
+    Froto.Serialization (0.7.2)
+      FSharp.Core (>= 4.5.2)
+    FSharp.Core (6.0.3)
+GIT
+  remote: https://github.com/techiedesu/falanx.git
+     (7221d379ce0f6a59b54a35ee31c1589a05286a96)
+      build: dotnet pack ./src/Falanx.sln -c Release -o ./Built
+      path: /Built/
+GITHUB
+  remote: meshtastic/Meshtastic-protobufs
+    mesh.options (0328a5269f8368f1eaa617d0e39f886d03d44c76)
+    mesh.proto (0328a5269f8368f1eaa617d0e39f886d03d44c76)

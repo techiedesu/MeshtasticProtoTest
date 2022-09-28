@@ -1,0 +1,10 @@
+source https://api.nuget.org/v3/index.json
+
+framework: net6.0
+
+git https://github.com/techiedesu/falanx.git update-to-net6 build: dotnet pack ./src/Falanx.sln -c Release -o ./Built, Packages: /Built/
+nuget Falanx.Proto.Codec.Binary
+nuget Falanx.Sdk
+
+github meshtastic/Meshtastic-protobufs mesh.proto
+github meshtastic/Meshtastic-protobufs mesh.options

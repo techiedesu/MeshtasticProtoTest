@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\paket-files\meshtastic\Meshtastic-protobufs\mesh.proto">
+      <Paket>True</Paket>
+      <Link>paket-files/mesh.proto</Link>
+    </Content>
+    <Content Include="..\paket-files\meshtastic\Meshtastic-protobufs\mesh.options">
+      <Paket>True</Paket>
+      <Link>paket-files/mesh.options</Link>
+    </Content>
+    <ProtoFile Include="..\paket-files\meshtastic\Meshtastic-protobufs\mesh.proto">
+      <Paket>True</Paket>
+      <Link>paket-files/mesh.proto</Link>
+      <OutputPath>mesh.proto</OutputPath>
+    </ProtoFile>
+    <ProtoFile Include="..\paket-files\meshtastic\Meshtastic-protobufs\mesh.options">
+      <Paket>True</Paket>
+      <Link>paket-files/mesh.options</Link>
+    </ProtoFile>
+    <Compile Include="Program.fs" />
+    <Content Include="paket.references" />
+  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>

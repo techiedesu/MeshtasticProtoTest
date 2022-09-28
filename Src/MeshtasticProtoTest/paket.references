@@ -1,0 +1,5 @@
+nuget Falanx.Proto.Codec.Binary
+nuget Falanx.Sdk
+
+File: mesh.proto
+File: mesh.options
